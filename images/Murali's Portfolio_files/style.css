@@ -469,9 +469,9 @@ ul{
 
 @media (max-width: 600px){
     .recommendation-card-style{
-        /* transform: scale(1.5); */
-        width: 130%;
-        left: -90px;
+        transform: scale(1.5);
+        width: 100%;
+        /* width: 10vh; */
     }
     .border-style-prof{
         width: 100%;
@@ -480,8 +480,10 @@ ul{
     .section{
         padding: 0;
     }
-    .section__title--skills{
-        text-align: left;
-        font-size: 2rem;;
+    .bottom-container{
+        width: 120%;
+    }
+    .my-certs{
+        width: 120%;
     }
 }
