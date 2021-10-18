@@ -490,4 +490,11 @@ ul{
     .Recommendation-style:hover{
         transform: none;
     }
+    .srini-style{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .Bhuvanesh-style{
+        margin-top: 0;
+    }
 }
