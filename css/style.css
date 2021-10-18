@@ -343,7 +343,7 @@ ul{
     list-style: none;
     text-align: left;
     font-weight: 100;
-    max-width: 30%;
+    max-width: 40%;
   }
   .timeline h1 {
     font-family: 'Saira', sans-serif;
@@ -398,6 +398,47 @@ ul{
 .timeline-heading{
     color: var(--clr-light);
 }
+@media (max-width: 600px){
+    .timeline {
+        border-left: 4px solid #004ffc; 
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Chivo', sans-serif;
+        margin: 50px auto; 
+        letter-spacing: 0.5px;
+        position: relative;
+        line-height: 1.4em;
+        font-size: 1.03em;
+        padding: 50px;
+        list-style: none;
+        text-align: left;
+        font-weight: 100;
+        max-width: 100%;
+    }
+      .timeline .event:before {
+        right: -50px;
+        top: -20px;
+        color: rgba(255, 255, 255, 0.4);
+        content: attr(data-date);
+        text-align: right;
+        font-weight: 100;
+        font-size: 0.9em;
+        min-width: 120px;
+        font-family: 'Saira', sans-serif;
+      }
+      .timeline .event:after {
+        box-shadow: 0 0 0 4px #004ffc;
+        right: 90px;
+        background: #313534;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content: "";
+        top: -30px;
+      }
+}
 /* Wave */
 
 .wave {
@@ -422,6 +463,20 @@ ul{
 
 
 
-/* For demonstration purposes only: */
 .wave body { font-size: 3.5em }
 .wave h1 { font-size: 0.5em }
+
+
+@media (max-width: 600px){
+    .recommendation-card-style{
+        transform: scale(1.5);
+        width: 100%;
+    }
+    .border-style-prof{
+        width: 100%;
+        margin: 0.5em;
+    }
+    .section{
+        padding: 0;
+    }
+}
