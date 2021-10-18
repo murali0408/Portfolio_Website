@@ -469,7 +469,6 @@ ul{
 
 @media (max-width: 600px){
     .recommendation-card-style{
-        /* transform: scale(1.5); */
         width: 130%;
         left: -90px;
     }
@@ -480,9 +479,8 @@ ul{
     .section{
         padding: 0;
     }
-    .section__title--skills{
-        /* text-align: left; */
-        font-size: 2rem;;
+    .size-fix{
+        font-size: 2.15rem;;
 
     }
     .kanda-style{
