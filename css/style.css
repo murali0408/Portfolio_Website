@@ -481,7 +481,12 @@ ul{
         padding: 0;
     }
     .section__title--skills{
-        text-align: left;
+        /* text-align: left; */
         font-size: 2rem;;
+
+    }
+    .kanda-style{
+        margin-bottom: 1.3em;
+        padding-bottom: 1em;
     }
 }
