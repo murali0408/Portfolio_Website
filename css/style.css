@@ -484,7 +484,10 @@ ul{
 
     }
     .kanda-style{
-        margin-bottom: 1.3em;
-        padding-bottom: 1em;
+        margin-bottom: 5rem;
+        /* padding-bottom: 5em; */
+    }
+    .Recommendation-style:hover{
+        transform: none;
     }
 }
