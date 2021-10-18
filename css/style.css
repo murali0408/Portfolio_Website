@@ -200,7 +200,7 @@ ul{
 }
 .card{
     margin: 3em 1em;
-    height: 12rem;
+    /* height: 12rem; */
 }
 .card-text{
     color: black;
@@ -242,7 +242,7 @@ ul{
 @media (max-width: 600px){
     .Recommendation-style{
         height: 6rem;
-        width: 150%;
+        /* width: 150%; */
         text-align: left;
     }
     .rec-row{
