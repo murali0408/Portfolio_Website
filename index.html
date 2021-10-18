@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Murali's Portfolio</title>
+        <link rel="icon" type="image/png" href="/images/Murali-pic.jpg"/>
+    </head>
+    <body>
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand d-md-none" href="#">Murali</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-md-flex d-block w-100">
+                <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#home">Home</a>
+                        <a class="nav-item nav-link" href="#aboutMe">About Me</a>
+                        <a class="nav-item nav-link" href="#skills-section">Skills</a>
+                        <a class="nav-item nav-link" href="#certs-section">Certifications</a>
+                        <a class="nav-item nav-link" href="#recommendation-section">Recommendations</a>
+                        <a class="nav-item nav-link" href="#contact-section">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Introduction section-->
+       
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi<span class="wave">👋</span>, I am <strong>Muralikrishna</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Cloud Software Developer</p>
+            <img src="images/MuraliPicNoBG.jpeg" alt="My picture" class="intro-image">
+        </section>
+       
+        <!-- About Me section  -->
+        <section class="my-certs" id="aboutMe">
+            <h2 class="section__title section__title--certs">A Little About Me</h2>
+            <p class="section__subtitle section__subtitle--aboutMe"></p>
+            <div>
+                <p class="about-style">
+                    A determined and passionate individual with a keen interest in Cloud Computing Technologies and Programming. Would love to learn new concepts and develop my skills whilst assisting the company in their success in the business efforts to the best of my ability with a devoted and a trustworthy attitude.
+                </p>
+                <p class="about-style">
+                    I'm currently pursuing my Masters degree in Information Systems to gain in-depth knowledge in Cloud Computing and hone on my programming skills. 
+                </p>
+                <p>
+                    A caring, fun-loving, indepenent and adaptable individual, who can is always curious about Technology and a zeal to excel in anything I work on, is how I would describe myself.
+                </p>
+            </div>
+
+
+            <div id="timeline-content">
+                <!-- <h1>My Timeline</h1> -->
+              
+                <ul class="timeline">
+                  <li class="event" data-date="Expected 2023">
+                    <h3 class="timeline-heading">Master of Science in Information Systems</h3>
+                    <p><i>Northeastern University</i></p>
+                    <p>
+                    <h6>Courses:</h6>
+                    <h6>Application Engineering Development</h6>
+                    <h6>Web Design and User Experience</h6>
+                    </p>
+                  </li>
+                  <li class="event" data-date="2021">
+                    <h3 class="timeline-heading">Senior Software Engineer</h3>
+                    <p><i>Wipro Limited</i></p>    
+                    <p>
+                        <h6>Worked on Cloud Migratation of legacy application from Data-Center to AWS hybrid cloud environment.</h6>
+                        <h6>Developed Dockerfile, k8s, Anisble, Jenkins, and shell scripts.</h6>
+                        <h6>Awarded Employee of the Qaurter for July-October, 2020</h6>
+                        </p>
+                  </li>
+                  <li class="event" data-date="2019">
+                    <h3 class="timeline-heading">B. Tech in Electronics and Communication Engineering</h3>
+                    <p><i>Vellore Institute of Technology</i></p>
+                    <p>
+                    <h6>Courses:</h6>
+                    <h6>Data Structures and Algorithms</h6>
+                    <h6>Problem Solving and Object Oriented Programming</h6>
+                    </p>
+                    </li>
+                    <li class="event" data-date="2018">
+                        <h3 class="timeline-heading">Data Analyst Intern</h3>
+                        <p><i>Nokia Solutions and Networks</i></p>    
+                        <p>
+                            <h6>Developed a strategy to reduce the testing time of a Base Station Reciever from 11 minitues to ~6minutes</h6>
+                            <h6>Awarded #2 place in Nokia Talent Search Makeathon</h6>
+                        </p>
+                      </li>
+                </ul>
+            </div>
+        </section> 
+
+        <!-- Skills section-->
+        <section class="my-skills" id="skills-section">
+            <h2 class="section__title section__title--skills">Technical Skills</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
+                              <p class="card-text">HTML5</p>
+                              <p class="card-text">CSS3</p>
+                              <p class="card-text">JavaScript</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Database </h6>
+                              <p class="card-text">MySQL</p>
+                              <p class="card-text">PostgreSQL</p>
+                              <p class="card-text">MongoDB</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Programming Languages</h6>
+                              <p class="card-text">Java</p>
+                              <p class="card-text">C</p>
+                              <p class="card-text">C++</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Repository Management</h6>
+                              <p class="card-text">Git</p>
+                              <p class="card-text">BitBucket</p>
+                              <p class="card-text">JFrog</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Platforms </h6>
+                              <p class="card-text">Docker</p>
+                              <p class="card-text">Kubernetes</p>
+                              <p class="card-text">AWS</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Other Tools/Softwares</h6>
+                              <p class="card-text">Ansible</p>
+                              <p class="card-text">Terrafrom</p>
+                              <p class="card-text">OpenShift</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification section-->
+        <section class="my-certs" id="certs-section">
+            <h2 class="section__title section__title--certs">Certifications</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card border-style-prof">
+                          <img class="card-img-top" src="images/AWS-SolArchitect-Associate.png" alt="AWS-solutions Architect">
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.credly.com/earner/earned/badge/91c3e502-0a81-4fd7-8968-c32f14a64784" class="card-link">Verify</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card border-style-prof">
+                          <img class="card-img-top" src="images/AWS-Developer-Associate.png" alt="AWS-Developer">
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.credly.com/earner/earned/badge/de5765b9-90c0-4474-8427-cf8f0c31da9c"  class="card-link">Verify</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card border-style-prof">
+                            <img class="card-img-top" src="images/ckad.png" alt="CKAD">
+                            <div class="card-body">
+                                <a target="_blank" href="https://www.credly.com/badges/41807370-2ccf-40f5-9ea2-4fab0ba3419d" class="card-link">Verify</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row certs-2-margin">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                          <img class="card-img-top" src="images/cka.jpg" alt="CKA">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                          <img class="card-img-top" src="images/Comptia_network.jpg" alt="Comptia Network+">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                            <img class="card-img-top" src="images/OpenShift_Certificate.jpg" alt="Openshift">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                            <img class="card-img-top" src="images/ansible.jpg" alt="Ansible">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                            <img class="card-img-top" src="images/docker.jpg" alt="Docker">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card border-style-prof">
+                            <img class="card-img-top" src="images/home-networking.jpg" alt="Networking">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+        <!-- Recommendation section-->
+        <section class="my-skills" id="recommendation-section">
+            <h2 class="section__title section__title--skills">Recommendations</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/kandasamy.jpeg" alt="kandasamy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/Varsha.jpeg" alt="Varsha">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/Shaila.jpeg" alt="Shaila">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/Naren.jpeg" alt="Naren">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/Srini.jpeg" alt="Srini">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 rec-row">
+                        <div class="card Recommendation-style recommendation-card-style">
+                            <img class="card-img-top" src="images/Bhuvanesh.jpeg" alt="Bhuvanesh">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- footer-->
+
+        <div class="bottom-container" id="contact-section">
+            <p><h4>Connect with me</h4></p>
+            <a class="footer-link" href="https://www.linkedin.com/in/muralikrishna04/"><i class="fab fa-linkedin size"></i></a>
+            <a class="footer-link" href="https://github.com/murali0408/"><i class="fab fa-github size"></i></a>
+            <a class="footer-link" href="https://muralikrishnas.medium.com"><i class="fab fa-medium size"></i></a>
+            <a class="footer-link" href="mailto:smuralikrishna29@gmail.com"><i class="fas fa-envelope size"></i></a>
+        </div>
+        
+        <!-- CDN FOR SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

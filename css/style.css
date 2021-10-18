@@ -1,0 +1,429 @@
+.nav-item{
+   margin: 0em 1em;
+}
+/* declaring global css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Sans Pro', monospcae;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
+}
+
+@media (min-width: 800px){
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General Styles */
+body{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+strong{
+    font-weight: var(--fw-bold);
+}
+/* button */
+.btn{
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* Typography */
+h1,h2,h3{
+    line-height: 1.1;
+    margin: 0;
+}
+h1{ 
+    font-size: var(--fs-h1)
+}
+h2{ 
+    font-size: var(--fs-h2)
+}
+h3{ 
+    font-size: var(--fs-h3)
+}
+
+.section__title{
+    margin-bottom: .25em;
+}
+.section__title--intro{
+    font-weight: var(--fw-reg);
+}
+.section__title--intro strong{
+    display: block;
+}
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+.section__subtitle--intro ,section__subtitle--aboutMe{
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+section{
+    padding: 5em 2em;
+}
+.intro{
+    position: relative;
+}
+@media (min-width: 600px){ 
+    .intro{
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: "img title" "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro-image{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+    .section__subtitle--intro{
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+}
+
+.my-skills{
+    background-color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode:soft-light;
+    color: var(--clr-light);
+    text-align: center;
+}
+.my-certs{
+    background-color: var(--clr-dark);
+    background-size: cover;
+    background-blend-mode:soft-light;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.my-certs .card{
+    background-color: var(--clr-dark);
+}
+.section__title--skills{
+    color: var(--clr-accent);
+    position: relative;
+    margin-bottom: 1em;
+}
+.section__title--skills::after{
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: auto;
+    background: currentColor;
+}
+.section__title--certs{
+    color: var(--clr-accent);
+    position: relative;
+    margin-bottom: 1em;
+}
+.section__title--certs::after{
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: auto;
+    background: currentColor;
+}
+
+.skills{
+    max-width: 500px;
+    margin: 0 auto;
+}
+@media (min-width: 800px){
+    .skills{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .skill + .skill{
+        margin-left: 2em;
+    }
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.card{
+    margin: 3em 1em;
+    height: 12rem;
+}
+.card-text{
+    color: black;
+    padding: auto;
+}
+.card-subtitle{
+    padding-bottom: 1em;
+}
+.card-title{
+    color: black;
+}
+.border-style{
+    border: none;
+    margin-bottom: 2em;
+}
+.border-style-prof{
+    border: none;
+    margin-bottom: 8em;
+}
+.certs-margin{
+    padding-top: 3em;
+}
+.Recommendation-style{
+    margin: 3em;
+    cursor:pointer;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+    /* height: 13rem; */
+}
+.Recommendation-style:hover{
+    transform: scale(1.5);
+}
+.recommendation-card-style{
+    border: none;
+}
+#recommend-section{
+    background-color: black;
+}
+@media (max-width: 600px){
+    .Recommendation-style{
+        height: 6rem;
+        width: 150%;
+        text-align: left;
+    }
+    .rec-row{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+.bottom-container{
+    background-color: var(--clr-dark);
+    height: 200px;
+    padding: 50px 0 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.footer-link{
+    margin: 3em 1em;
+    text-align: center;
+}
+.size{
+    font-size: 2em;
+    color:cornsilk;
+}
+.bottom-container h4{
+    color: whitesmoke;
+}
+.about-me{
+    background-color: var(--clr-dark);
+}
+.section__title--aboutMe{
+    color: var(--clr-light);
+}
+.about-style{
+    text-align: center;
+}
+.about-style p{
+    text-align: center;
+}
+
+/* Timeline */
+
+
+  /* Variables */
+  /* Base */
+  #timeline-content body {
+    background: #252827;
+    font-size: 16px;
+  }
+  #timeline-content p {
+    font-weight: 300;
+  }
+  #timeline-content a {
+    color: #6c6d6d;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0.3em;
+    font-size: 0.6em;
+    font-weight: 400;
+    background: #252727;
+    padding: 0.3rem 1rem;
+    margin: 1.9rem 0 0 0;
+    float: right;
+  }
+  #timeline-content a:hover {
+    color: white;
+    background: #004ffc;
+    border-bottom: 0.35em solid black;
+  }
+  #timeline-content strong {
+    font-weight: 600;
+  }
+  #timeline-content h1 {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 400;
+    font-size: 2.4em;
+  }
+  #timeline-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+  /* Timeline */
+  .timeline {
+    border-left: 4px solid #004ffc;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Chivo', sans-serif;
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 30%;
+  }
+  .timeline h1 {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;
+  }
+  .timeline h2,
+  .timeline h3 {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+  }
+  .timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  .timeline .event:before,
+  .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  .timeline .event:before {
+    left: -217.5px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'Saira', sans-serif;
+  }
+  .timeline .event:after {
+    box-shadow: 0 0 0 4px #004ffc;
+    left: -57.85px;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+  }
+.timeline-heading{
+    color: var(--clr-light);
+}
+.certs-2-margin{
+    padding: 3em;
+}
+/* Wave */
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+/* For demonstration purposes only: */
+.wave body { font-size: 3.5em }
+.wave h1 { font-size: 0.5em }
