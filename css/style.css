@@ -222,6 +222,7 @@ ul{
 }
 .certs-margin{
     padding-top: 3em;
+    /* padding: 3em; */
 }
 .Recommendation-style{
     margin: 3em;
@@ -396,9 +397,6 @@ ul{
   }
 .timeline-heading{
     color: var(--clr-light);
-}
-.certs-2-margin{
-    padding: 3em;
 }
 /* Wave */
 
