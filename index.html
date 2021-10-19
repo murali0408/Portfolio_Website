@@ -10,10 +10,10 @@
         <title>Murali's Portfolio</title>
         <link rel="icon" type="image/png" href="/images/Murali-pic.jpg"/>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <!-- Navbar-->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="scroll">
             <a class="navbar-brand d-md-none" href="#">Muralikrishna</a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
             <div class="d-md-flex d-block w-100">
                 <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#home">Home</a>
+                        <a class="nav-item nav-link" href="#home">Home</a>
                         <a class="nav-item nav-link" href="#aboutMe">About Me</a>
                         <a class="nav-item nav-link" href="#skills-section">Skills</a>
                         <a class="nav-item nav-link" href="#certs-section">Certifications</a>
@@ -44,9 +44,10 @@
        
         <!-- About Me section  -->
         <section class="my-certs" id="aboutMe">
+            <div data-spy="scroll" data-target="#scroll" data-offset="0">
             <h2 class="section__title section__title--certs">A Little About Me</h2>
             <p class="section__subtitle section__subtitle--aboutMe"></p>
-            <div>
+            <!-- <div>
                 <p class="about-style">
                     A determined and passionate individual with a keen interest in Cloud Computing Technologies and Programming. Would love to learn new concepts and develop my skills whilst assisting the company in their success in the business efforts to the best of my ability with a devoted and a trustworthy attitude.
                 </p>
@@ -56,8 +57,8 @@
                 <p>
                     A caring, fun-loving, indepenent and adaptable individual, who can is always curious about Technology and a zeal to excel in anything I work on, is how I would describe myself.
                 </p>
+            </div> -->
             </div>
-
 
             <div id="timeline-content">
                 <!-- <h1>My Timeline</h1> -->
@@ -76,7 +77,7 @@
                     <h3 class="timeline-heading">Senior Software Engineer</h3>
                     <p><i>Wipro Limited</i></p>    
                     <p>
-                        <h6>Worked on Cloud Migratation of legacy application from Data-Center to AWS hybrid cloud environment.</h6>
+                        <h6>Worked on Cloud Migration of legacy application from Data-Center to AWS hybrid cloud environment.</h6>
                         <h6>Developed Dockerfile, k8s, Anisble, Jenkins, and shell scripts.</h6>
                         <h6>Awarded Employee of the Qaurter for July-October, 2020</h6>
                         </p>
@@ -109,7 +110,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
                               <p class="card-text">HTML5</p>
@@ -120,7 +121,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Database </h6>
                               <p class="card-text">MySQL</p>
@@ -131,7 +132,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Programming Languages</h6>
                               <p class="card-text">Java</p>
@@ -145,7 +146,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Repository Management</h6>
                               <p class="card-text">Git</p>
@@ -156,7 +157,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Platforms </h6>
                               <p class="card-text">Docker</p>
@@ -167,7 +168,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body card-box">
                               <h5 class="card-title"></h5>
                               <h6 class="card-subtitle mb-2 text-muted">Other Tools/Softwares</h6>
                               <p class="card-text">Ansible</p>
@@ -297,7 +298,7 @@
         <!-- footer-->
 
         <div class="bottom-container" id="contact-section">
-            <p><h4>Connect with me</h4></p>
+            <p><h4>Connect With Me</h4></p>
             <a class="footer-link" href="https://www.linkedin.com/in/muralikrishna04/"><i class="fab fa-linkedin size"></i></a>
             <a class="footer-link" href="https://github.com/murali0408/"><i class="fab fa-github size"></i></a>
             <a class="footer-link" href="https://muralikrishnas.medium.com"><i class="fab fa-medium size"></i></a>

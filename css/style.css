@@ -218,7 +218,7 @@ ul{
 }
 .border-style-prof{
     border: none;
-    margin-bottom: 8em;
+    margin-bottom: 2em;
 }
 .certs-margin{
     padding-top: 3em;
@@ -253,8 +253,8 @@ ul{
 }
 .bottom-container{
     background-color: var(--clr-dark);
-    height: 200px;
-    padding: 50px 0 20px;
+    height: 100px;
+    padding: 2px 0 120px;
     text-decoration: none;
     text-align: center;
 }
@@ -264,10 +264,10 @@ ul{
 }
 .size{
     font-size: 2em;
-    color:cornsilk;
+    color: grey;
 }
 .bottom-container h4{
-    color: whitesmoke;
+    color: grey;
 }
 .about-me{
     background-color: var(--clr-dark);
@@ -498,3 +498,24 @@ ul{
         margin-top: 0;
     }
 }
+.card-box{
+    box-shadow: 1.5px 1.5px 1.5px grey;
+}
+/* #home{
+    overflow-y: scroll;
+}
+#aboutMe{
+    overflow-y: scroll;
+}
+#skills-section{
+    overflow-y: scroll;
+}
+#certs-section{
+    overflow-y: scroll;
+}
+#recommendation-section{
+    overflow-y: scroll;
+}
+#contact-section{
+    overflow-y: scroll;
+} */
